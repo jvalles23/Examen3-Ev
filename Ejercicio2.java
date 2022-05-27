@@ -4,12 +4,13 @@ import java.io.File;
 import java.util.Scanner;
 
 public class Ejercicio2 {
-	public static void leerFichero(String fichero, String a, String b, String s, String n) {
-		File file = new File(fichero);
+	public static void leerFichero(String nombre, String a, String b, String s, String n) {
+		File file = new File(nombre);
 		int contadorL = -1;
 		int contador1 = 0;
 		int contador2 = 0;
 		int contador3 = 0;
+		double sum = 0;
 		try {
 			Scanner f = new Scanner(file);
 			while (f.hasNextLine()) {
@@ -22,10 +23,14 @@ public class Ejercicio2 {
 				if (palabra[2].equals(b) && palabra[1].equals(n)) {
 					contador2++;
 				}
+				for(int i = 0; i < palabra.length; i++) {
+					if() {
+						
+					}
+				}
 			}
 			System.out.println("El numero total de divorcios con separacion previa en 2019 es: " + contador1);
 			System.out.println("El numero total de divorcios sin separacion previa en 2018 es: " + contador2);
-			System.out.println("El numero total de divorcios con separacion previa en 2019 es: " + contador3);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
