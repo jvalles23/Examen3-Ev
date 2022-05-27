@@ -89,7 +89,7 @@ public class SimpleLinkedList {
 		return true;
 	}
 
-	public void eliminarMayor(Node node) {
+	public void eliminarMayor(int size) {
 		Node p = first;
 		for (int i = 0; i < size; i++) {
 			if (node.getContent() > p.getContent()) {
