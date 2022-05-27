@@ -13,7 +13,7 @@ public class Ejercicio4 {
 			if(numero == 0) {
 				return 0;
 			}else {
-				return tablaMultiplicar(numero + 1);
+				return numero*(tablaMultiplicar(numero %2));
 			}
 		}	
 	public static void main(String[] args) {
